@@ -1,4 +1,4 @@
-#import "../src/lib.typ": *
+#import "@preview/boxed-sheet:0.1.0": *
 
 #set text(font: (
   "Times New Roman",
@@ -7,7 +7,7 @@
 
 #let homepage = link("https://lzhms.github.io/")[https://lzhms.github.io/]
 #let author = "Zhihao Li"
-#let title = "JavaScript Cheet Sheet"
+#let title = "JavaScript Cheat Sheet"
 
 #show: cheatsheet.with(
   title: title,
