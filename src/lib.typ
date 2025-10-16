@@ -1,4 +1,8 @@
-#let color-box = (
+#import "tuni-style.typ": *
+
+// List of available themes
+#let tau-theme = (tuniLPurple, tuniBlue, tuniPink, tuniYellow, tuniFuchsia, tuniGreen, tuniGrey)
+#let default-theme = (
   rgb(190, 149, 196),
   rgb(255, 205, 178),
   rgb(102, 155, 188),
@@ -14,9 +18,10 @@
   alignment: start,
   width: 100%,
   fill-color: white,
+  theme: default-theme,
 ) = context {
   let heading-count = counter(heading).at(here()).first()
-  let current-color = color-box.at(calc.rem(heading-count - 1, color-box.len()))
+  let current-color = theme.at(calc.rem(heading-count - 1, theme.len()))
 
   block(
     stroke: current-color,
@@ -31,9 +36,9 @@
   ]
 }
 
-#let inline(title) = context {
+#let inline(title, theme: default-theme) = context {
   let heading-count = counter(heading).at(here()).first()
-  let current-color = color-box.at(calc.rem(heading-count - 1, color-box.len()))
+  let current-color = theme.at(calc.rem(heading-count - 1, theme.len()))
 
   box(grid(
     columns: (1fr, auto, 1fr),
@@ -61,6 +66,7 @@
   num-columns: 5,
   column-gutter: 4pt,
   numbered-units: false,
+  theme: default-theme,
   body) = {
 
     set page(
@@ -93,9 +99,9 @@
              
     show heading: it => {
       let index = counter(heading).at(it.location()).first()
-      let hue = color-box.at(calc.rem(index, color-box.len()))
+      let hue = theme.at(calc.rem(index, theme.len()))
       if title-number {
-        hue = color-box.at(calc.rem(index - 1, color-box.len()))
+        hue = theme.at(calc.rem(index - 1, theme.len()))
       }
  
       let color = hue.darken(8% * (it.depth - 1))
@@ -189,9 +195,9 @@
              
     show heading: it => {
       let index = counter(heading).at(it.location()).first()
-      let hue = color-box.at(calc.rem(index, color-box.len()))
+      let hue = theme.at(calc.rem(index, theme.len()))
       if title-number {
-        hue = color-box.at(calc.rem(index - 1, color-box.len()))
+        hue = theme.at(calc.rem(index - 1, theme.len()))
       }
  
       let color = hue.darken(8% * (it.depth - 1))
