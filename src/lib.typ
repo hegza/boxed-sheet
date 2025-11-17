@@ -65,7 +65,6 @@
   y-margin: 0pt,
   num-columns: 5,
   column-gutter: 4pt,
-  numbered-units: false,
   theme: default-theme,
   body) = {
 
@@ -161,7 +160,6 @@
   y-margin: 0pt,
   num-columns: 5,
   column-gutter: 4pt,
-  numbered-units: false,
   body) = {
 
     set page(
