@@ -16,6 +16,17 @@ Colorful and organised cheatsheet template for [Typst](https://typst.app/) that 
   </tr>
 </table>
 
+---
+
+
+<div align="center">
+
+**⭐ If this project helps you, please give me a Star!**
+
+</div>
+
+---
+
 ## Usage
 
 To build this project via the CLI, use the command
