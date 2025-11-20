@@ -6,15 +6,17 @@
   "SimSun",
 ))
 
-#let homepage = link("https://lzhms.github.io/")[https://lzhms.github.io/]
+#let homepage = link("https://lzhms.github.io/")[Homepage]
 #let author = "Zhihao Li"
 #let title = "JavaScript Cheat Sheet"
 
-#show: boxedsheet.with(
+#show: boxedsheet-scaling.with(
   title: title,
   homepage: homepage,
   authors: author,
   write-title: true,
+  page-w: 350.28pt,
+  page-h: 241.89pt,
   title-align: left,
   title-number: true,
   title-delta: 2pt,
@@ -22,8 +24,8 @@
   font-size: 5.5pt,
   line-skip: 5.5pt,
   x-margin: 10pt,
-  y-margin: 30pt,
-  num-columns: 4,
+  y-margin: 20pt,
+  num-columns: 1,
   column-gutter: 2pt,
   numbered-units: false
 )

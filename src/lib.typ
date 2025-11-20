@@ -45,7 +45,7 @@
 ))
 }
 
-#let cheatsheet(
+#let boxedsheet(
   title: [],
   homepage: "",
   authors: (),
@@ -138,8 +138,9 @@
     columns(num-columns, gutter: column-gutter, new-body)
 }
 
-#let cheatsheet-scaling(
-  title: [], 
+#let boxedsheet-scaling(
+  title: [],
+  homepage: "",
   authors: (),
   write-title: false,
   title-align: center,

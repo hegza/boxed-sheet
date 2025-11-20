@@ -5,6 +5,17 @@ Colorful and organised cheatsheet template for [Typst](https://typst.app/) that 
 
 ![](thumbnail.png)
 
+<table>
+  <tr>
+    <td><img src="imgs/boxedsheet-scaling_Page1.png" alt="Page 1" width="100%"/></td>
+    <td><img src="imgs/boxedsheet-scaling_Page2.png" alt="Page 2" width="100%"/></td>
+  </tr>
+  <tr>
+    <td><img src="imgs/boxedsheet-scaling_Page3.png" alt="Page 3" width="100%"/></td>
+    <td><img src="imgs/boxedsheet-scaling_Page4.png" alt="Page 4" width="100%"/></td>
+  </tr>
+</table>
+
 ## Usage
 
 To build this project via the CLI, use the command
@@ -16,8 +27,8 @@ typst init @preview/boxed-sheet
 A sample project will be created with the template format.
 
 ## Configuration
-### cheatsheet config
-This template exports the `cheatsheet` function using the `a4` page with the following named optional
+### boxedsheet config
+This template exports the `boxedsheet` function using the `a4` page with the following named optional
 arguments:
 
 
@@ -37,7 +48,7 @@ arguments:
 - `column_gutter`: Space between columns (Default = 4pt)
 - `numbered_units`: Numbering of units (Default = false)
 
-### cheatsheet-scaling config
+### boxedsheet-scaling config
 In this template we add the extral parameters to adjust the page size and keep other parameters same.
 
 - `page-w`: The width of page (Default = auto)
