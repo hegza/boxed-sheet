@@ -7,12 +7,12 @@ Colorful and organised cheatsheet template for [Typst](https://typst.app/) that 
 
 <table>
   <tr>
-    <td><img src="imgs/boxedsheet-scaling_Page1.png" alt="Page 1" width="100%"/></td>
-    <td><img src="imgs/boxedsheet-scaling_Page2.png" alt="Page 2" width="100%"/></td>
+    <td><img src="assets/boxedsheet-scaling_Page1.png" alt="Page 1" width="100%"/></td>
+    <td><img src="assets/boxedsheet-scaling_Page2.png" alt="Page 2" width="100%"/></td>
   </tr>
   <tr>
-    <td><img src="imgs/boxedsheet-scaling_Page3.png" alt="Page 3" width="100%"/></td>
-    <td><img src="imgs/boxedsheet-scaling_Page4.png" alt="Page 4" width="100%"/></td>
+    <td><img src="assets/boxedsheet-scaling_Page3.png" alt="Page 3" width="100%"/></td>
+    <td><img src="assets/boxedsheet-scaling_Page4.png" alt="Page 4" width="100%"/></td>
   </tr>
 </table>
 
