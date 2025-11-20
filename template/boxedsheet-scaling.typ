@@ -1,5 +1,5 @@
-// #import "@preview/boxed-sheet:0.1.0": *
-#import "../src/lib.typ": *
+#import "@preview/boxed-sheet:0.1.0": *
+// #import "../src/lib.typ": *
 
 #set text(font: (
   "Times New Roman",
